@@ -6,9 +6,9 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "create-local": "graph create uniscam/swap --node http://127.0.0.1:8020",
+    "create-local": "graph create --node http://161.117.87.222:8020 Circleswap/swap",
     "deploy-local": "graph deploy uniscam/swap --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
-    "deploy": "graph deploy YUHUAKUKUDE/circle --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --access-token 92830f4aaae848e5bf4b58afc51e4b7a",
+    "deploy": "graph deploy Circleswap/swap --ipfs http://161.117.87.222:5001 --node http://161.117.87.222:8020",
     "deploy-staging": "graph deploy $THE_GRAPH_GITHUB_USER/$THE_GRAPH_SUBGRAPH_NAME /Uniswap --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
     "watch-local": "graph deploy graphprotocol/Uniswap2 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
   },

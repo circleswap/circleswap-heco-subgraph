@@ -1,5 +1,5 @@
 specVersion: 0.0.2
-description: Uniswap is a decentralized protocol for automated token exchange on Ethereum.
+description: Circleswap is a decentralized protocol for automated token exchange on Heco.
 repository: git@github.com:circleswap/circleswap-heco-subgraph.git
 schema:
   file: ./schema.graphql
@@ -8,9 +8,9 @@ dataSources:
     name: Factory
     network: mainnet
     source:
-      address: '0x32ce36f6ea8d97f9fc19aab83b9c6d2f52d74470'
+      address: '0xB49f19289857f4499781AaB9afd4A428C4BE9CA8'
       abi: Factory
-      startBlock: 554344
+      startBlock: 622608
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
